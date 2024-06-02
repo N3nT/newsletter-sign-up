@@ -1,0 +1,76 @@
+body {
+  background-color: hsl(235, 18%, 26%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: hsl(234, 29%, 20%);
+}
+
+.wrap {
+  width: 900px;
+  height: 600px;
+  display: flex;
+  background-color: white;
+  padding: 30px;
+  border-radius: 18px;
+}
+.wrap .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 60px;
+  margin-left: 30px;
+}
+.wrap .left h1 {
+  font-weight: 700;
+  font-size: 55px;
+  margin-bottom: 0ch;
+}
+.wrap .left p {
+  margin-bottom: 0;
+}
+.wrap .left ul {
+  list-style-image: url(../assets/images/icon-list.svg);
+}
+.wrap .left ul li {
+  padding: 10px 0px;
+}
+.wrap .left .info {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.wrap .left .info .label {
+  font-weight: 700;
+}
+.wrap .left .info .error {
+  display: none;
+  color: tomato;
+}
+.wrap .left input {
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid hsl(231, 7%, 60%);
+  outline: none;
+  font-size: 16px;
+}
+.wrap .left input:active, .wrap .left input:focus {
+  border: 1px solid black;
+}
+.wrap .left button {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+}
+
+.success_wrap {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
