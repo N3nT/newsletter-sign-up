@@ -26,6 +26,11 @@ body {
 		justify-content: center;
 		margin-right: 60px;
 		margin-left: 30px;
+        .input_error{
+            border: 1px solid tomato;
+            background-color: #ffe8e6;
+            color: tomato;
+        }
 		h1 {
 			font-weight: 700;
 			font-size: 55px;
@@ -41,7 +46,6 @@ body {
 			padding-left: 0;
 			padding-bottom: 30px;
 			list-style: none;
-			//list-style-image: url(../assets/images/icon-list.svg);
 			li {
 				padding: 10px 0px;
 				display: flex;
@@ -61,6 +65,7 @@ body {
 			}
 			.error {
 				display: none;
+                font-weight: 700;
 				color: tomato;
 			}
 		}
@@ -70,10 +75,13 @@ body {
 			border: 1px solid hsl(231, 7%, 60%);
 			outline: none;
 			font-size: 16px;
+            cursor: pointer;
+            &:hover,
 			&:active,
 			&:focus {
 				border: 1px solid black;
 			}
+            
 		}
 		button {
 			margin-top: 20px;

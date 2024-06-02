@@ -30,6 +30,11 @@ body {
   margin-right: 60px;
   margin-left: 30px;
 }
+.wrap .left .input_error {
+  border: 1px solid tomato;
+  background-color: #ffe8e6;
+  color: tomato;
+}
 .wrap .left h1 {
   font-weight: 700;
   font-size: 55px;
@@ -65,6 +70,7 @@ body {
 }
 .wrap .left .info .error {
   display: none;
+  font-weight: 700;
   color: tomato;
 }
 .wrap .left input {
@@ -73,8 +79,9 @@ body {
   border: 1px solid hsl(231, 7%, 60%);
   outline: none;
   font-size: 16px;
+  cursor: pointer;
 }
-.wrap .left input:active, .wrap .left input:focus {
+.wrap .left input:hover, .wrap .left input:active, .wrap .left input:focus {
   border: 1px solid black;
 }
 .wrap .left button {
