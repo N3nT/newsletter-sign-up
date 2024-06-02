@@ -1,6 +1,7 @@
 const error_label = document.querySelector('.error')
 const email_input = document.querySelector('input')
 const email_button = document.querySelector('.email_button')
+const succes_button = document.querySelector('.succes_button')
 const succes_wrap = document.querySelector('.success_wrap')
 const form_wrap = document.querySelector('.wrap')
 
@@ -10,12 +11,17 @@ const validateEmail = () => {
         error_label.style.display = 'block'
         email_input.classList.add('input_error')
     } else {
-        //error_label.style.display = 'none'
-        //email_input.classList.remove('input_error')
+        error_label.style.display = 'none'
+        email_input.classList.remove('input_error')
         succes_wrap.style.display = 'block'
         form_wrap.style.display = 'none'
     }
   }
 
+const back = () => {
+    succes_wrap.style.display = 'none'
+    form_wrap.style.display = 'flex'
+}
 
 email_button.addEventListener('click', validateEmail)
+succes_button.addEventListener('click', back)
