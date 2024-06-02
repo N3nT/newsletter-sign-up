@@ -38,8 +38,10 @@ h1 {
 }
 
 .wrap {
-  width: 900px;
-  height: 600px;
+  width: 80%;
+  max-width: 900px;
+  max-height: 600px;
+  overflow: hidden;
   display: none;
   background-color: white;
   padding: 30px;
@@ -101,6 +103,9 @@ h1 {
 .wrap .left input:hover, .wrap .left input:active, .wrap .left input:focus {
   border: 1px solid black;
 }
+.wrap .right .img_mobile {
+  display: none;
+}
 
 .success_wrap {
   display: block;
@@ -123,4 +128,13 @@ h1 {
 .success_wrap button {
   width: 100%;
   margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrap {
+    padding: 30px 10px;
+  }
+  .wrap .right .desktop_img {
+    height: 200px;
+  }
 }/*# sourceMappingURL=style.css.map */
