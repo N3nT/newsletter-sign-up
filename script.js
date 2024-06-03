@@ -4,6 +4,7 @@ const email_button = document.querySelector('.email_button')
 const succes_button = document.querySelector('.succes_button')
 const succes_wrap = document.querySelector('.success_wrap')
 const form_wrap = document.querySelector('.wrap')
+const succes_email = document.querySelector('.success_email')
 
 const validateEmail = () => {
     email = email_input.value
@@ -15,6 +16,8 @@ const validateEmail = () => {
         email_input.classList.remove('input_error')
         succes_wrap.style.display = 'block'
         form_wrap.style.display = 'none'
+        email_input.value = ''
+        change_email(email)
     }
   }
 
@@ -23,5 +26,8 @@ const back = () => {
     form_wrap.style.display = 'flex'
 }
 
+const change_email = (email) => {
+    succes_email.innerText = email
+}
 email_button.addEventListener('click', validateEmail)
 succes_button.addEventListener('click', back)
