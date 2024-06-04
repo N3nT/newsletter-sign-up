@@ -42,7 +42,7 @@ h1 {
   max-width: 900px;
   max-height: 600px;
   overflow: hidden;
-  display: none;
+  display: flex;
   background-color: white;
   padding: 30px;
   border-radius: 18px;
@@ -108,7 +108,7 @@ h1 {
 }
 
 .success_wrap {
-  display: block;
+  display: none;
   width: 400px;
   height: 400px;
   padding: 50px;
